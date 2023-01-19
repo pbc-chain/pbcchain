@@ -1,7 +1,0 @@
-[main]
-host = https://www.transifex.com
-
-[pbcchain.qt-translation-017x]
-file_filter = src/qt/locale/pbcchain_<lang>.ts
-source_file = src/qt/locale/pbcchain_en.ts
-source_lang = en
