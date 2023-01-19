@@ -1,0 +1,33 @@
+# /etc/conf.d/pbcchaind: config file for /etc/init.d/pbcchaind
+
+# Config file location
+#PBCCHAIND_CONFIGFILE="/etc/pbcchain/pbcchain.conf"
+
+# What directory to write pidfile to?  (created and owned by $PBCCHAIND_USER)
+#PBCCHAIND_PIDDIR="/var/run/pbcchaind"
+
+# What filename to give the pidfile
+#PBCCHAIND_PIDFILE="${PBCCHAIND_PIDDIR}/pbcchaind.pid"
+
+# Where to write pbcchaind data (be mindful that the blockchain is large)
+#PBCCHAIND_DATADIR="/var/lib/pbcchaind"
+
+# User and group to own pbcchaind process
+#PBCCHAIND_USER="pbcchain"
+#PBCCHAIND_GROUP="pbcchain"
+
+# Path to pbcchaind executable
+#PBCCHAIND_BIN="/usr/bin/pbcchaind"
+
+# Nice value to run pbcchaind under
+#PBCCHAIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#PBCCHAIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for pbcchaind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+PBCCHAIND_SIGTERM_TIMEOUT=60
