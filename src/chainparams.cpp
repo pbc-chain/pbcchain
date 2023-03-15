@@ -151,15 +151,16 @@ public:
             {
                 { 0, uint256S("0x003d2ea12c7be1ec888119668e20221c2934d6e29f08ec0bf34370ff91fad0f1")},
 				{ 2561, uint256S("0x0000000072505f06c08e6495018b5ec5cc428df1fb66607442ef33e9577a3b55")},
+				{ 10279, uint256S("00000000845eb9e6993f8782473036d525a654aebc04e28db814b37c52eb6962")},
                   
             }
         };
 
         chainTxData = ChainTxData{
-            // Data from rpc: getchaintxstats 2561 0000000072505f06c08e6495018b5ec5cc428df1fb66607442ef33e9577a3b55
-            1674049308, // * UNIX timestamp of last known number of transactions
-            2569,  // * total number of transactions between genesis and that timestamp
-            0.002002532224230562 // * estimated number of transactions per second after that timestamp
+            // Data from rpc: getchaintxstats 10279 00000000845eb9e6993f8782473036d525a654aebc04e28db814b37c52eb6962
+            1678878816, // * UNIX timestamp of last known number of transactions
+            107167,  // * total number of transactions between genesis and that timestamp
+            0.03725158218353292 // * estimated number of transactions per second after that timestamp
         };
 
         /* disable fallback fee on mainnet */
@@ -243,14 +244,15 @@ public:
         checkpointData = {
             {
                 { 0, uint256S("0x00a1e91ddffe468b90dbc36ec74008d9a14e33bf1db2a603837eade0fa4c9eea")},
+				{ 20142, uint256S("0000009dd1af38c535c9859ffdb29e1c122912e0ce88bd56456df9f39c60e7e0")},
             }
         };
 
         chainTxData = ChainTxData{
-            // Data from rpc: getchaintxstats 4096 0000000000000037a8cd3e06cd5edbfe9dd1dbcc5dacab279376ef7cfc2b4c75
-            1674051468, // * UNIX timestamp of last known number of transactions
-            3311,  // * total number of transactions between genesis and that timestamp
-            0.005797665165125703 // * estimated number of transactions per second after that timestamp
+            // Data from rpc: getchaintxstats 20142 0000009dd1af38c535c9859ffdb29e1c122912e0ce88bd56456df9f39c60e7e0
+            1678884546, // * UNIX timestamp of last known number of transactions
+            55449,  // * total number of transactions between genesis and that timestamp
+            0.030593273949741 // * estimated number of transactions per second after that timestamp
         };
 
         /* enable fallback fee on testnet */
